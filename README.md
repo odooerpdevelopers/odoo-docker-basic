@@ -16,7 +16,7 @@ En este workshop aprenderás a configurar un entorno de desarrollo en Odoo utili
 
 ---
 
-## 🔧 Requisitos  
+## 🔧 1. Requisitos preparar sistema 
 
 Antes de comenzar, necesitas instalar Docker en tu sistema operativo.  
 
@@ -99,7 +99,7 @@ volumes:
 - Se mapean los puertos 8069 (para acceder a Odoo) y 5432 (para la base de datos).
 - Se crean volúmenes persistentes para la base de datos y los módulos personalizados.
 
-## 🛠️ Entorno de Desarrollo con VS Code  
+## 🛠️ 3. Entorno de Desarrollo con VS Code  
 Para manejar el proyecto de forma eficiente, te recomiendo usar **Visual Studio Code (VS Code)**, ya que es el editor de código más utilizado hoy en día y es gratuito.  
 
 🔗 **Descargar VS Code**  
@@ -123,7 +123,7 @@ Una vez instalado VS Code, instala las siguientes extensiones para mejorar tu fl
 
 ---
 
-## 🚀 **3. Levantar los Contenedores**
+## 🚀 **4. Levantar los Contenedores**
 
 Ejecuta el siguiente comando en la terminal dentro del directorio donde creaste `docker-compose.yml`
 puedes usar el terminal integrado de VScode (Control + J)(CMD + J) o desde el Menu Terminal / nuevo:
@@ -151,7 +151,7 @@ podras detener, reiniciar, etc.
 
 ---
 
-## 🛠️ **4. Acceder a Odoo y Crear una Base de Datos**
+## 🛠️ **5. Acceder a Odoo y Crear una Base de Datos**
 
 1. Abre tu navegador y ve a `http://localhost:8069`
 2. Configura una nueva base de datos con los siguientes datos:
@@ -171,11 +171,11 @@ de preferencia
 
 <img src="./img/odoologin.png" alt="Logo" width="300"/>
 
-<img src="./img/odoo_apps.png" alt="Logo" width="300"/>
+<img src="./img/odoo_apps.png" alt="Logo" width="500"/>
 
 ---
 
-## 🔄 **5. Montar Módulos Personalizados**
+## 🔄 **6. Montar Módulos Personalizados**
 
 Para agregar módulos personalizados, coloca tus Apps en el directorio `custom_addons/` dentro de la misma carpeta donde creaste `docker-compose.yml`.
 
@@ -189,7 +189,16 @@ docker compose restart
 
 ---
 
-## ✅ **6. Detener y Eliminar Contenedores**
+## **6. Monitorizar recursos del sistema**
+Puedes usar el siguiente comando para ver el uso de CPU, Memoria, Ancho banda, etc. 
+de todos los contenedores activos
+
+```sh
+docker stats
+```
+
+
+## ✅ **7. Detener y Eliminar Contenedores**
 
 Para detener los contenedores sin eliminarlos:
 
