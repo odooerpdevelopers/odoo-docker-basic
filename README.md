@@ -182,7 +182,7 @@ Para agregar módulos personalizados, coloca tus Apps en el directorio `custom_a
 Luego, reinicia Odoo desde el terminal de VSCODE para que reconozca los nuevos módulos:
 
 ```sh
-docker-compose restart
+docker compose restart
 ```
 
 **Imagen a insertar:** Captura del explorador de archivos mostrando la carpeta `custom_addons/` con un módulo dentro.
@@ -194,20 +194,20 @@ docker-compose restart
 Para detener los contenedores sin eliminarlos:
 
 ```sh
-docker-compose stop
+docker compose stop
 ```
 
 Para eliminarlos solo los contenedores:
 
 ```sh
-docker-compose down
+docker compose down
 ```
 
 Para eliminarlos completamente junto con los volúmenes:
 
 ```sh
 # perderás todos los datos almacenados de Odoo y PG
-docker-compose down -v
+docker compose down -v
 ```
 
 ---
