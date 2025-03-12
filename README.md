@@ -185,9 +185,47 @@ Luego, reinicia Odoo desde el terminal de VSCODE para que reconozca los nuevos m
 docker compose restart
 ```
 
-**Imagen a insertar:** Captura del explorador de archivos mostrando la carpeta `custom_addons/` con un módulo dentro.
+**Resultado:**
+
+1. He agregado un modulo comun de OCA que se llama web_responsive y lo he dejado dentro de `custom_addons/`
+
+<img src="./img/addons.png" alt="Logo" width="500"/>
+
+2. Reiniciar el contenedor de Odoo
+```sh
+docker compose restart
+```
+
+<img src="./img/restart.png" alt="Logo" width="500"/>
+
+## 🔄 **3. Actualizar la Lista de Apps en Odoo**
+
+Para actualizar la lista de aplicaciones en Odoo, sigue estos pasos:
+
+1. **Activar Modo Desarrollador:**
+  - Inicia sesión en Odoo con el usuario `admin`.
+  - Navega a `Ajustes`.
+  - Haz clic en `Activar Modo Desarrollador`.
+
+  <img src="./img/developer.png" alt="Activar Modo Desarrollador" width="500"/>
+
+2. **Actualizar Lista de Aplicaciones:**
+  - Ve al menú de `Aplicaciones`.
+  - Haz clic en `Actualizar lista de aplicaciones`.
+
+  <img src="./img/apps_menu.png" alt="Menú de Aplicaciones" width="200"/>
+  <img src="./img/update_apps.png" alt="Actualizar Lista de Aplicaciones" width="500"/>
+
+3. **Buscar y Instalar Apps:**
+  - Busca tus aplicaciones personalizadas en la barra de búsqueda.
+  - En este ejemplo, busca e instala `web_responsive`.
+
+  <img src="./img/search_app.png" alt="Buscar Aplicaciones" width="500"/>
+
+¡Listo! Ahora puedes instalar cualquier aplicación personalizada que hayas agregado o descargado de internet.
 
 ---
+
 
 ## **6. Monitorizar recursos del sistema**
 Puedes usar el siguiente comando para ver el uso de CPU, Memoria, Ancho banda, etc. 
@@ -196,6 +234,9 @@ de todos los contenedores activos
 ```sh
 docker stats
 ```
+
+<img src="./img/stats.png" alt="Logo" width="500"/>
+
 
 
 ## ✅ **7. Detener y Eliminar Contenedores**
