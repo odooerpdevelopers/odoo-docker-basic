@@ -198,7 +198,7 @@ docker compose restart
 
 <img src="./img/restart.png" alt="Logo" width="500"/>
 
-## 🔄 **3. Actualizar la Lista de Apps en Odoo**
+### 🔄 **6.1 Actualizar la Lista de Apps en Odoo**
 
 Para actualizar la lista de aplicaciones en Odoo, sigue estos pasos:
 
@@ -227,7 +227,7 @@ Para actualizar la lista de aplicaciones en Odoo, sigue estos pasos:
 ---
 
 
-## **6. Monitorizar recursos del sistema**
+## **7. Monitorizar recursos del sistema**
 Puedes usar el siguiente comando para ver el uso de CPU, Memoria, Ancho banda, etc. 
 de todos los contenedores activos
 
@@ -239,7 +239,7 @@ docker stats
 
 
 
-## ✅ **7. Detener y Eliminar Contenedores**
+## ✅ **8. Detener y Eliminar Contenedores**
 
 Para detener los contenedores sin eliminarlos:
 
